@@ -17,10 +17,10 @@
                         <div class="col logo-container">
                             <?php 
                             if (get_header_image() == '') { ?>
-                            <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
-                            <?php
+                                <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo("name"); ?></a></h1>
+                                <?php
                             } else { ?>
-                            <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php header_image(); ?>"
+                                <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php header_image(); ?>"
                                     height="<?php echo get_custom_header()->height; ?>"
                                     width="<?php echo get_custom_header()->width; ?>" alt="Company Logo" /></a>
                             <?php

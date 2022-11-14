@@ -29,26 +29,25 @@
                     <?php
                         while(have_posts()) {
                             the_post() ?>
-                    <li class='mb-4'>
-                        <article class="archive-post d-flex mb-2">
-                            <?php the_post_thumbnail('thumbnail'); ?>
-                            <div class="archive-post-text">
-                                <h2>
-                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                </h2>
-                                <p class="post_data">
-                                    <?php echo "Post written by: ".get_the_author()." | Published on: ".get_the_date()?>
-                                <p class="excerpt">
-                                    <?php 
-                                    $excerpt = get_the_excerpt();
-echo $excerpt;
-                                ?>
-                                </p>
-                            </div>
-                        </article>
-                    </li>
-
-                    <?php
+                            <li class='mb-4'>
+                                <article class="archive-post d-flex mb-2">
+                                    <?php the_post_thumbnail('thumbnail'); ?>
+                                    <div class="archive-post-text">
+                                        <h2>
+                                            <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                        </h2>
+                                        <p class="post_data">
+                                            <?php echo "Post written by: ".get_the_author()." | Published on: ".get_the_date()?>
+                                        <p class="excerpt">
+                                            <?php 
+                                                $excerpt = get_the_excerpt();
+                                                echo $excerpt;
+                                            ?>
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <?php
                         }
                     }
                 ?>
