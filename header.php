@@ -14,7 +14,6 @@
             <div class="header">
                 <div class="container ">
                     <div class="row">
-
                         <div class="col logo-container">
                             <?php 
                             if (get_header_image() == '') { ?>

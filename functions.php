@@ -15,7 +15,7 @@
 
         //Javascript files
         wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js');
-        wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/scripts.js');
+        // wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/scripts.js');
     }
 
     add_action('wp_enqueue_scripts', 'custom_theme_scripts');

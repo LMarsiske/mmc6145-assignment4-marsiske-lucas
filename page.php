@@ -10,7 +10,7 @@
             <?php the_post_thumbnail('medium'); ?>
         </div>
         <div class="text-container">
-            <h2><?php the_title(); ?></h2>
+            <h1><?php the_title(); ?></h1>
             <p class="content"><?php the_content() ?></p>
         </div>
     </div>

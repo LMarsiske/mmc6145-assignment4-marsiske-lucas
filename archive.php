@@ -21,38 +21,38 @@
                             echo "Archives";
                         }
                     ?>
-                    </h2>
-                    <?php
+                </h1>
+                <?php
                     if (have_posts()) {
                         ?>
-                    <ul class="archive-post-list">
-                        <?php
+                <ul class="archive-post-list">
+                    <?php
                         while(have_posts()) {
                             the_post() ?>
-                        <li>
-                            <div class="archive-post-border">
-                                <article class="archive-post">
-                                    <h3>
-                                        <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
-                                    </h3>
-                                    <p class="excerpt">
-                                        <?php 
+                    <li class='mb-4'>
+                        <article class="archive-post d-flex mb-2">
+                            <?php the_post_thumbnail('thumbnail'); ?>
+                            <div class="archive-post-text">
+                                <h2>
+                                    <a href="<?php the_permalink() ?>"><?php the_title() ?></a>
+                                </h2>
+                                <p class="post_data">
+                                    <?php echo "Post written by: ".get_the_author()." | Published on: ".get_the_date()?>
+                                <p class="excerpt">
+                                    <?php 
                                     $excerpt = get_the_excerpt();
-
-//                                     $excerpt = substr($excerpt, 0, 150);
-// $result = substr($excerpt, 0, strrpos($excerpt, ' '));
 echo $excerpt;
                                 ?>
-                                    </p>
-                                </article>
+                                </p>
                             </div>
-                        </li>
+                        </article>
+                    </li>
 
-                        <?php
+                    <?php
                         }
                     }
                 ?>
-                    </ul>
+                </ul>
             </section>
         </div>
     </div>
