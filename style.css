@@ -7,3 +7,126 @@
     Author URI: https://lucasmarsiske.com
     Tags: professional, clean, simple
 */
+
+/* Body styles */
+body {
+  background: #222;
+  color: #fffafa;
+}
+
+/* Header styles */
+.header-border {
+  background: rgb(246, 63, 56);
+  background: linear-gradient(
+    135deg,
+    rgba(246, 63, 56, 1) 2%,
+    rgba(255, 125, 76, 1) 25%,
+    rgba(1, 221, 246, 1) 75%,
+    rgba(0, 79, 130, 1) 98%
+  );
+  height: 100px;
+  padding-bottom: 3px;
+}
+
+.header {
+  background: #222;
+  color: #fffafa;
+  height: 97px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.custom-menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+.custom-menu a {
+  text-decoration: none;
+  color: #fffafa;
+  font-size: 32px;
+}
+
+/* Main styles */
+main {
+  min-height: calc(100vh - 170px);
+  margin-bottom: 20px;
+}
+
+/* Archive styles */
+.archive-container ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+
+/* .archive-container li {
+  background: rgb(246, 63, 56);
+  background: linear-gradient(
+    135deg,
+    rgba(246, 63, 56, 1) 2%,
+    rgba(255, 125, 76, 1) 25%,
+    rgba(1, 221, 246, 1) 75%,
+    rgba(0, 79, 130, 1) 98%
+  );
+  padding-bottom: 1px;
+} */
+
+.archive-container a {
+  text-decoration: none;
+  color: #fffafa;
+  font-size: 24px;
+}
+
+.archive-post-border {
+  background: rgb(246, 63, 56);
+  background: linear-gradient(
+    135deg,
+    rgba(246, 63, 56, 1) 2%,
+    rgba(255, 125, 76, 1) 25%,
+    rgba(1, 221, 246, 1) 75%,
+    rgba(0, 79, 130, 1) 98%
+  );
+  padding-bottom: 1px;
+}
+.archive-post {
+  background: #222;
+  color: #fffafa;
+  padding-bottom: 1px;
+}
+
+/* Footer styles */
+footer {
+  height: 50px;
+  font-size: 24px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #fffafa;
+}
+
+.socials ul {
+  list-style: none;
+  margin: 0;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fffafa;
+  font-size: 24px;
+}
